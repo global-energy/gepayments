@@ -1,0 +1,86 @@
+/* Heading 1 */
+@utility h1 {
+  @apply text-h1 font-heading leading-tight font-bold mb-1 md:mb-0;
+}
+
+/* Heading 2 */
+@utility h2 {
+  @apply text-h2 font-heading mt-2 md:mt-3 mb-1;
+}
+
+/* Heading 3 */
+@utility h3 {
+  @apply text-h3 font-bold font-heading mt-2 mb-1 leading-[1.125];
+}
+
+/* Heading 4 */
+@utility h4 {
+  @apply text-h4 font-heading mt-1.5 mb-0.75;
+}
+
+/* Heading 5 */
+@utility h5 {
+  @apply text-h5 mt-1.5 mb-0.75;
+}
+
+/* Heading 6 */
+@utility h6 {
+  @apply text-h6 mb-0.75 mt-1.5 font-bold capitalize;
+}
+
+/* Paragraph */
+@utility paragraph {
+  @apply text-base leading-loose my-0.75 first:mt-0 last:mb-0;
+}
+
+@layer utilities {
+
+  h1,
+  .h1 {
+    @apply h1;
+  }
+
+  h2,
+  .h2 {
+    @apply h2;
+  }
+
+  h3,
+  .h3 {
+    @apply h3;
+  }
+
+  h4,
+  .h4 {
+    @apply h4;
+  }
+
+  h5,
+  .h5 {
+    @apply h5;
+  }
+
+  h6,
+  .h6 {
+    @apply h6;
+  }
+
+  p,
+  .paragraph {
+    @apply paragraph;
+  }
+
+  ul {
+    @apply list-disc ml-4;
+  }
+
+  ol {
+    @apply list-decimal ml-4;
+  }
+
+  ul > li,
+  ol > li {
+    @apply text-base leading-loose;
+  }
+
+}

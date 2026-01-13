@@ -10,7 +10,7 @@
   --color-secondary: #E9B347;
   --color-secondary-dark: #E87F46;
   --color-offwhite: #D3DCE0;
-  --color-nearblack: #002030;
+  --color-nearblack: #00121B;
   --color-charcoal: #242424;
   --color-success: #2e7d32;
   --color-success-1: #ADFFAB;
@@ -41,25 +41,17 @@
   /* H6 */
   --text-h6: clamp(22px, calc(24 / 768 * 100vw), 24px);
 
-  /* Title (h1) */
-  --font-exo-2: 'Exo 2', sans-serif;
-  --font-title: var(--font-exo-2);
-
   /* Heading */
   --font-raleway: 'Raleway', sans-serif;
   --font-heading: var(--font-raleway);
 
   /* Sans-serif body */
-  --font-roboto: 'Roboto', Helvetica, Arial, sans-serif;
-  --font-sans: var(--font-roboto);
+  --font-noto-sans: 'Noto Sans', Helvetica, Arial, sans-serif;
+  --font-sans: var(--font-noto-sans);
 
-  /* FontAwesome Icon Font */
-  --font-icon: var(--fa-family, var(--fa-style-family, "Font Awesome 7 Free"));
+  /* Secondary Font */
+  --font-roboto: 'Roboto', 'Noto Sans', Helvetica, Arial, sans-serif;
 
   /* -- Spacing -- */
   --spacing: 16px;
-  --max-width: 2000px;
-
-  /* -- Transition -- */
-  --default-transition-duration: 200ms;
 }

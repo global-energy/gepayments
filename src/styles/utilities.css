@@ -39,7 +39,7 @@
 
 /* Button Default */
 @utility button {
-  @apply inline-block cursor-pointer py-0.5 px-1.5 font-title transition bg-offwhite border-2 border-primary text-primary hover:bg-primary-light focus:bg-primary-light hover:border-primary-light focus:border-primary-light hover:text-white focus:text-white;
+  @apply inline-block cursor-pointer py-0.5 px-1.5 transition bg-offwhite border-2 border-primary text-primary hover:bg-primary-light focus:bg-primary-light hover:border-primary-light focus:border-primary-light hover:text-white focus:text-white;
 }
 
 /* Button Secondary */
@@ -58,7 +58,11 @@
 
 /* Container width */
 @utility container {
-  @apply max-w-2xl ml-auto mr-auto;
+  @apply max-w-90 ml-auto mr-auto;
+}
+
+@utility container-padded {
+  @apply container px-2 xl:px-4;
 }
 
 /* Visually Hidden */
@@ -69,32 +73,6 @@
   overflow: hidden;
   word-wrap: normal;
   clip: rect(1px, 1px, 1px, 1px);
-}
-
-/* Tags */
-@utility tag {
-  @apply text-white [font-size:15px] font-bold font-sans py-0.25 px-1 rounded-[12] bg-primary uppercase;
-}
-
-@utility tag-danger {
-  @apply tag bg-error;
-}
-
-@utility tag-active {
-  @apply tag bg-success;
-}
-
-@utility tag-other {
-  @apply tag bg-secondary text-charcoal;
-}
-
-@utility tag-special {
-  @apply tag bg-[#820747];
-}
-
-/* Rounding */
-@utility rounded-full {
-  @apply [border-radius:100%]!;
 }
 
 /* Links */
