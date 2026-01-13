@@ -1,0 +1,18 @@
+{
+  "name": "gepayments",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "repository": "https://github.com/tommasocc/gepayments.git",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "granim": "^2.0.0",
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.2.4"
+  }
+}

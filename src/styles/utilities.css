@@ -1,0 +1,107 @@
+/* Animated Underline (hide on hover) */
+@utility animated-underline {
+  @apply no-underline bg-[linear-gradient(90deg,var(--tw-current),var(--tw-current))] [--tw-current:currentColor] bg-bottom-left bg-size-[100%_1px] hover:bg-size-[0_1px] bg-no-repeat transition-[background-size] ease-in-out;
+}
+
+/* Animated Underline - Inverse (show on hover) */
+@utility animated-underline-reverse {
+  --tw-current: currentColor; /* Fix firefox currentColor variable bug */
+
+  @apply no-underline bg-[linear-gradient(90deg,var(--tw-current),var(--tw-current))] [--tw-current:currentColor] bg-bottom-left bg-size-[0_1px] hover:bg-size-[100%_1px] bg-no-repeat transition-[background-size] duration-initial ease-in-out;
+}
+
+/* Button Danger */
+@utility button-danger {
+  @apply bg-error-1 border-transparent text-black hover:bg-error focus:bg-error hover:border-error-1 focus:border-error-1 hover:text-white focus:text-white;
+}
+
+.button--danger {
+  @apply button-danger;
+}
+
+/* Button Primary */
+@utility button-primary {
+  @apply bg-primary border-transparent text-white hover:bg-primary-light focus:bg-primary-light hover:border-primary-lightest focus:border-primary-lightest;
+}
+
+.button--primary {
+  @apply button-primary;
+}
+
+/* Button Small */
+@utility button-small {
+  @apply py-0.25 px-0.75 text-sm;
+}
+
+.button--small {
+  @apply button-small;
+}
+
+/* Button Default */
+@utility button {
+  @apply inline-block cursor-pointer py-0.5 px-1.5 font-title transition bg-offwhite border-2 border-primary text-primary hover:bg-primary-light focus:bg-primary-light hover:border-primary-light focus:border-primary-light hover:text-white focus:text-white;
+}
+
+/* Button Secondary */
+@utility button-secondary {
+  @apply bg-transparent border-secondary text-secondary hover:bg-secondary focus:bg-secondary hover:text-nearblack focus:text-nearblack hover:border-secondary focus:border-secondary;
+}
+
+.button--secondary {
+  @apply button-secondary;
+}
+
+/* Button Circle */
+@utility button-circle {
+  @apply bg-secondary shadow-xl/25 p-0.5 rounded-[100%] aspect-square inline-block w-3 h-3 text-nearblack transition hover:bg-accent hover:shadow-xl/15;
+}
+
+/* Container width */
+@utility container {
+  @apply max-w-2xl ml-auto mr-auto;
+}
+
+/* Visually Hidden */
+@utility visually-hidden {
+  position: absolute !important; /* stylelint-disable-line declaration-no-important */
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  word-wrap: normal;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Tags */
+@utility tag {
+  @apply text-white [font-size:15px] font-bold font-sans py-0.25 px-1 rounded-[12] bg-primary uppercase;
+}
+
+@utility tag-danger {
+  @apply tag bg-error;
+}
+
+@utility tag-active {
+  @apply tag bg-success;
+}
+
+@utility tag-other {
+  @apply tag bg-secondary text-charcoal;
+}
+
+@utility tag-special {
+  @apply tag bg-[#820747];
+}
+
+/* Rounding */
+@utility rounded-full {
+  @apply [border-radius:100%]!;
+}
+
+/* Links */
+@utility link {
+  @apply text-secondary animated-underline;
+}
+
+@utility link-inverse {
+  @apply text-primary animated-underline;
+}

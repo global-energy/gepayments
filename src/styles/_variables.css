@@ -1,0 +1,65 @@
+@theme {
+  /* -- Colors -- */
+  --color-primary-darkest: #002135;
+  --color-primary-dark: #014060;
+  --color-primary: #205873;
+  --color-primary-light: #007fb2;
+  --color-primary-lightest: #44B8F2;
+  --color-accent: #009AF9;
+  --color-secondary-light: #E8CC93;
+  --color-secondary: #E9B347;
+  --color-secondary-dark: #E87F46;
+  --color-offwhite: #D3DCE0;
+  --color-nearblack: #002030;
+  --color-charcoal: #242424;
+  --color-success: #2e7d32;
+  --color-success-1: #ADFFAB;
+  --color-success-2: #E5FBDC;
+  --color-error: #8A1B0A;
+  --color-error-1: #F48576;
+  --color-error-2: #FBDEDB;
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* -- Fonts -- */
+  /* Base */
+  --text-base: clamp(18px, calc(22 / 768 * 100vw), 22px);
+  /* XS */
+  --text-xs: clamp(14px, calc(16 / 768 * 100vw), 16px);
+  /* Small */
+  --text-sm: clamp(16px, calc(18 / 768 * 100vw), 18px);
+  /* H1 */
+  --text-h1: clamp(54px, calc(64 / 768 * 100vw), 64px);
+  /* H2 */
+  --text-h2: clamp(40px, calc(46 / 768 * 100vw), 46px);
+  /* H3 */
+  --text-h3: clamp(36px, calc(40 / 768 * 100vw), 40px);
+  /* H4 */
+  --text-h4: clamp(28px, calc(32 / 768 * 100vw), 32px);
+  /* H5 */
+  --text-h5: clamp(24px, calc(28 / 768 * 100vw), 28px);
+  /* H6 */
+  --text-h6: clamp(22px, calc(24 / 768 * 100vw), 24px);
+
+  /* Title (h1) */
+  --font-exo-2: 'Exo 2', sans-serif;
+  --font-title: var(--font-exo-2);
+
+  /* Heading */
+  --font-raleway: 'Raleway', sans-serif;
+  --font-heading: var(--font-raleway);
+
+  /* Sans-serif body */
+  --font-roboto: 'Roboto', Helvetica, Arial, sans-serif;
+  --font-sans: var(--font-roboto);
+
+  /* FontAwesome Icon Font */
+  --font-icon: var(--fa-family, var(--fa-style-family, "Font Awesome 7 Free"));
+
+  /* -- Spacing -- */
+  --spacing: 16px;
+  --max-width: 2000px;
+
+  /* -- Transition -- */
+  --default-transition-duration: 200ms;
+}
