@@ -29,7 +29,7 @@ document.querySelectorAll('.insert-current-year:not(.updated)').forEach(
 window.addEventListener('scroll', () => {
   if (window.scrollY || !window.location.hash) return;
 
-  window.history.pushState({}, '', '/');
+  window.history.pushState({}, '', window.location.pathname);
 })
 
 // Send message from contact form.
