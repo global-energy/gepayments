@@ -24,3 +24,24 @@ document.querySelectorAll('.insert-current-year:not(.updated)').forEach(
     currentYear.classList.add('updated');
   }
 )
+
+// Remove hash at top of page.
+window.addEventListener('scroll', () => {
+  if (window.scrollY || !window.location.hash) return;
+
+  window.history.pushState({}, '', '/');
+})
+
+// Send message from contact form.
+const contactForm = document.querySelector('#contact-form');
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const elements = contactForm.elements;
+  const subject = 'GE Payments Inquiry from ' + elements.company.value;
+  const message = elements.message.value;
+
+  const mailtoLink = `mailto:example@localhost?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+  // window.alert(mailtoLink);
+  window.open(mailtoLink, '_blank');
+})

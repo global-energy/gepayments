@@ -8,5 +8,29 @@
 }
 
 * {
-  @apply scroll-smooth;
+  @apply scroll-smooth scroll-m-1;
+}
+
+/* Images */
+.inline-image {
+  @apply rounded-[48px] rounded-bl-none rounded-tr-none my-2 object-cover;
+}
+
+/* Contact Form */
+#contact-form .form-item {
+  @apply flex flex-col my-1 first:mt-0 last:mb-0 text-base;
+}
+
+#contact-form > div.required label,
+#contact-form > div.required .asterisk {
+  @apply after:content-['\00A0*'] after:align-super after:text-sm after:text-error-1;
+}
+
+label {
+  @apply font-bold mb-0.5;
+}
+
+input,
+textarea {
+  @apply px-0.75 py-0.5 border border-offwhite;
 }

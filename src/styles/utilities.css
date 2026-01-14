@@ -39,7 +39,7 @@
 
 /* Button Default */
 @utility button {
-  @apply inline-block cursor-pointer py-0.5 px-1.5 transition bg-offwhite border-2 border-primary text-primary hover:bg-primary-light focus:bg-primary-light hover:border-primary-light focus:border-primary-light hover:text-white focus:text-white;
+  @apply inline-block rounded-xl rounded-bl-none rounded-tr-none cursor-pointer py-0.5 px-1.5 transition bg-offwhite border-2 border-primary text-primary hover:bg-primary-light focus:bg-primary-light hover:border-primary-light focus:border-primary-light hover:text-white focus:text-white;
 }
 
 /* Button Secondary */
@@ -58,7 +58,7 @@
 
 /* Container width */
 @utility container {
-  @apply max-w-90 ml-auto mr-auto;
+  @apply max-w-100 ml-auto mr-auto;
 }
 
 @utility container-padded {
