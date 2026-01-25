@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 
 export default defineConfig({
-  base: '/gepayments/',
+  base: '/',
   plugins: [
     tailwindcss(),
     ViteImageOptimizer(),
