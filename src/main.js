@@ -40,8 +40,8 @@ contactForm.addEventListener('submit', (e) => {
   const elements = contactForm.elements;
   const subject = 'GE Payments Inquiry from ' + elements.company.value;
   const message = elements.message.value;
+  const mailto = 'info@globalenergy.net';
 
-  const mailtoLink = `mailto:example@localhost?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-  // window.alert(mailtoLink);
+  const mailtoLink = `mailto:${mailto}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
   window.open(mailtoLink, '_blank');
 })
