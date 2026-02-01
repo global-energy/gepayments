@@ -13,7 +13,7 @@
 
 /* Images */
 .inline-image {
-  @apply rounded-[48px] rounded-bl-none rounded-tr-none my-2 object-cover;
+  @apply rounded-[48px] rounded-bl-none rounded-tr-none object-cover;
 }
 
 /* Contact Form */
